@@ -14,7 +14,9 @@
           type="text"
           name="user-name"
           id="user-name"
-          placeholder="enter your first name" /></label
+          maxlength="20"
+          minlength="5"
+          required /></label
       ><br /><br />
       <label for="last-name"
         >Last Name:
@@ -30,7 +32,8 @@
           type="password"
           name="pass"
           id="pass"
-          placeholder="enter your password" /></label
+          placeholder="enter your password"
+          required /></label
       ><br /><br />
       <label for="comment"
         >Bio:<textarea name="bio" id="comment"></textarea>
@@ -66,16 +69,56 @@
           name="interests"
           value="reading"
           id="reading"
-        /><label for="reading">Reading</label><br />
+        /><label for="reading">Reading</label>
       </fieldset>
+      <br />
       <label for="country"
         >Country:
-        <select name="country" id="country">
+        <select name="country" id="country" required>
           <option value="United States">United States</option>
           <option value="Austalia">Austalia</option>
           <option value="Pakistan">Pakistan</option>
         </select></label
-      >
+      ><br /><br />
+      <label for="color"
+        >Preferred Colors:
+        <select name="color" id="color" size="4" required>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="yellow">Yellow</option>
+        </select></label
+      ><br /><br />
+      <label for="profile"
+        >Profile Picture:
+        <input
+          type="file"
+          name="profile"
+          id="profile"
+          required
+          accept="image/png" /></label
+      ><br /><br />
+      <label for="birthdate"
+        >Birthdate:
+        <input type="date" name="birthdate" id="birthdate" required /></label
+      ><br /><br />
+
+      <label for="email"
+        >Email:
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder=""
+          required /></label
+      ><br /><br />
+      <label for="web"
+        >Website: <input type="url" name="web" id="web" placeholder="" /></label
+      ><br /><br />
+      <label for="search"
+        >Search: <input type="search" name="search" id="search" /></label
+      ><br /><br />
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
