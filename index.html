@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>User Registration Form</h1>
+    <form action="">
+      <label for="user-name"
+        >First Name:
+        <input
+          type="text"
+          name="user-name"
+          id="user-name"
+          placeholder="enter your first name" /></label
+      ><br /><br />
+      <label for="last-name"
+        >Last Name:
+        <input
+          type="text"
+          name="last-name"
+          id="last-name"
+          placeholder="enter your last name" /></label
+      ><br /><br />
+      <label for="pass"
+        >Password:
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          placeholder="enter your password" /></label
+      ><br /><br />
+      <label for="comment"
+        >Bio:<textarea name="bio" id="comment"></textarea>
+      </label>
+      <fieldset>
+        <legend>Gender:</legend>
+        <input type="radio" name="gender" value="male" id="male" /><label
+          for="male"
+          >Male</label
+        ><br />
+        <input type="radio" name="gender" value="female" id="female" /><label
+          for="female"
+          >Female</label
+        ><br />
+        <input type="radio" name="gender" value="other" id="other" /><label
+          for="other"
+          >Other</label
+        ><br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Interests:</legend>
+        <input type="radio" name="interests" value="music" id="music" /><label
+          for="music"
+          >Music</label
+        ><br />
+        <input type="radio" name="interests" value="sports" id="sports" /><label
+          for="sports"
+          >Sports</label
+        ><br />
+        <input
+          type="radio"
+          name="interests"
+          value="reading"
+          id="reading"
+        /><label for="reading">Reading</label><br />
+      </fieldset>
+      <label for="country"
+        >Country:
+        <select name="country" id="country">
+          <option value="United States">United States</option>
+          <option value="Austalia">Austalia</option>
+          <option value="Pakistan">Pakistan</option>
+        </select></label
+      >
+    </form>
+  </body>
+</html>
