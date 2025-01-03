@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+
   <body>
-    <h1>User Registration Form</h1>
+    <h1 style="text-decoration: underline;">User Registration Form</h1>
     <form action="">
       <label for="user-name"
         >First Name:
@@ -24,7 +25,7 @@
           type="text"
           name="last-name"
           id="last-name"
-          placeholder="enter your last name" /></label
+          placeholder="" /></label
       ><br /><br />
       <label for="pass"
         >Password:
@@ -32,11 +33,11 @@
           type="password"
           name="pass"
           id="pass"
-          placeholder="enter your password"
+          placeholder=""
           required /></label
       ><br /><br />
       <label for="comment"
-        >Bio:<textarea name="bio" id="comment"></textarea>
+        >Bio:<textarea name="bio" id="comment" cols="" rows=""></textarea>
       </label>
       <fieldset>
         <legend>Gender:</legend>
@@ -120,5 +121,7 @@
       ><br /><br />
       <button type="submit">Submit</button>
     </form>
+    <br />
+    <a href="#top">Click me to reach at the top of the site.</a>
   </body>
 </html>
